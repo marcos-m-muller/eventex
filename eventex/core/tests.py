@@ -6,7 +6,6 @@ class HomeTest(TestCase):
 
     def test_get(self):
         """Get / must return status code 200"""
-        print(self.response)
         self.assertEqual(200, self.response.status_code)
 
     def test_template(self):
