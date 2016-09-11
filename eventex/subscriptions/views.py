@@ -32,8 +32,8 @@ def create(request):
     return HttpResponseRedirect('/inscricao/')
 
 def new(request):
-        context = {'form': SubscriptionForm()}
-        return render(request, 'subscription_form.html',context)
+    context = {'form': SubscriptionForm()}
+    return render(request, 'subscription_form.html',context)
 
 
 def _send_mail(subject, from_, to, template_name, context):
