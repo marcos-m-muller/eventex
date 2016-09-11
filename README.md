@@ -2,6 +2,9 @@
 
 Sistema de eventos encomendado pela Morena
 
+[![Build Status](https://travis-ci.org/marcos-m-muller/eventex.svg?branch=master)](https://travis-ci.org/marcos-m-muller/eventex)
+[![Code Health](https://landscape.io/github/marcos-m-muller/eventex/master/landscape.svg?style=flat)](https://landscape.io/github/marcos-m-muller/eventex/master)
+
 ## Como desenvolver?
 1. Clone o repositório
 2. Crie um virtualenv com Python 3.5
