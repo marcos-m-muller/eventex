@@ -6,7 +6,7 @@ class SubscribePostValid(TestCase):
     def setUp(self):
         post_data = dict(name='Marcos Müller', email='marcos.m.muller@gmail.com', phone='982306271', cpf='10707955777')
         self.response = self.client.post('/inscricao/', post_data)
-        self.email = mail.outbox[0]
+        self.email = mail.outbox[0] 
 
     def test_subscription_email_subject(self):
         expected = 'Confirmação de inscrição'
