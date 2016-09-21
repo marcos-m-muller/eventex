@@ -8,6 +8,9 @@ from eventex.subscriptions.forms import SubscriptionForm
 
 
 # Create your views here.
+from eventex.subscriptions.models import Subscription
+
+
 def subscribe(request):
     if request.method == 'POST':
         return create(request)
@@ -26,6 +29,8 @@ def create(request):
               form.cleaned_data['email'],
               'subscription_email.txt',
               form.cleaned_data)
+
+    Subscription.objects.create(**form.cleaned_data)
 
     messages.success(request, 'Inscrição realizada com sucesso!')
 
