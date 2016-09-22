@@ -7,7 +7,6 @@ from django.template.loader import render_to_string
 from eventex.subscriptions.forms import SubscriptionForm
 
 
-# Create your views here.
 from eventex.subscriptions.models import Subscription
 
 
@@ -35,6 +34,7 @@ def create(request):
     messages.success(request, 'Inscrição realizada com sucesso!')
 
     return HttpResponseRedirect('/inscricao/')
+
 
 def new(request):
     context = {'form': SubscriptionForm()}
